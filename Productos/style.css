@@ -1,0 +1,103 @@
+.product, .product_bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product > .description {
+  padding-right: 75px;
+}
+
+.product > .description > h2 {
+  font-family: Barlow_Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #252323;
+  padding-bottom: 32px;
+}
+
+.product > .description > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.11px;
+  color: #53565A;
+  padding-bottom: 25px;
+}
+
+.product_bg > .image {
+  padding-right: 100px;
+}
+
+.product_bg > .description > h2 {
+  font-family: Barlow_Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: white;
+  padding-bottom: 32px;
+}
+
+.product_bg > .description > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.11px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width : 1100px){
+  .product > .description {
+    padding-right: 25px;
+  }
+
+  .product_bg > .image {
+    padding-right: 35px;
+  }
+
+  .product > .description > h2, .product_bg > .description > h2 {
+    font-size: 24px;
+    padding-bottom: 24px;
+    line-height: 28px;
+  }
+  .product > .description > p, .product_bg > .description > p {
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width : 750px){
+  .product, .product_bg {
+    flex-direction: column;
+  }
+
+  .product_bg > .image {
+    padding-right: 0px;
+    padding-bottom: 40px;
+  }
+
+  .product > .description {
+    padding-right: 0px;
+    padding-bottom: 40px;
+  }
+
+  .product > .description > h2, .product_bg > .description > h2 {
+    font-size: 20px;
+    padding-bottom: 24px;
+    line-height: 24px;
+  }
+  .product > .description > p, .product_bg > .description > p {
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 18px;
+  }
+}

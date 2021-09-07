@@ -1,0 +1,252 @@
+.all_steps {
+  display: flex;
+  padding-top: 20px;
+}
+
+.line_step {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 24px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #003C71;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.line {
+  content: "";
+  display: block;
+  border-left: 2px dashed #003C71;
+  width: 0px;
+  height: 117px;
+  margin: 0 auto;
+}
+
+.step > span {
+  background-color: #003C71;
+  width: 27.5px;
+  height: 27.5px;
+  border-radius: 50%;
+  color: white;
+  font-family: Barlow_Medium;
+  line-height: 27.5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.all_steps .group_list li,
+.questions_list .group_list li {
+  font-family: Barlow;
+  padding-left: 15px;
+  margin-bottom: 10px !important;
+  font-size: 16px;
+}
+
+.all_steps .custom_paragraph {
+  min-height: 155px;
+  font-size: 16px;
+}
+
+.all_steps .custom_paragraph > p {
+  margin-top: 0px;
+}
+
+.all_steps .custom_paragraph > h4 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.alert_warning {
+  display: flex;
+  align-items: center;
+  background: #E5EBF0;
+  border-radius: 6px 0px 0px 6px;
+  border-left: 7px solid #003C71;
+  padding: 12px;
+  font-family: Barlow;
+  color: #53565A;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.questions {
+  display: flex;
+}
+
+.questions_image {
+  width: 478px;
+}
+
+.questions_list {
+  width: calc(100% - 478px);
+  padding-right: 50px;
+}
+
+.questions_list > label {
+  display: block;
+  padding: 23px;
+  background: #FFFFFF;
+  border: 1px solid #E5E2E2;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.questions_list > #q1:checked + label > div,
+.questions_list > #q2:checked + label > div,
+.questions_list > #q3:checked + label > div,
+.questions_list > #q4:checked + label > div,
+.questions_list > #q5:checked + label > div,
+.questions_list > #q6:checked + label > div {
+  display: block;
+}
+
+.questions_list > #q1:checked + label > h4 > img,
+.questions_list > #q2:checked + label > h4 > img,
+.questions_list > #q3:checked + label > h4 > img,
+.questions_list > #q4:checked + label > h4 > img,
+.questions_list > #q5:checked + label > h4 > img,
+.questions_list > #q6:checked + label > h4 > img {
+  transform: rotate(0deg);
+  transition: .3s ease-in;
+}
+
+.e-blue {
+  color: #003C71;
+  font-weight: bold;
+}
+
+.questions_list > label > div {
+  display: none;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.11px;
+  color: #4C5662;
+  margin-top: 32px;
+}
+
+.questions_list > label > div span {
+  font-family: Barlow_Medium;
+}
+
+.questions_list > label > h4 {
+  position: relative;
+  font-family: Barlow_Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252323;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.questions_list > label > h4 > img {
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  transform: rotate(180deg);
+  transition: .3s ease-in;
+}
+
+.questions_list > label:last-child {
+  margin-bottom: 0px;
+}
+
+.questions_list > [type="radio"] {
+  display: none;
+}
+
+.custom_paragraph span, .group_list span {
+  font-family: Barlow_Medium;
+}
+
+@media screen and (max-width : 1200px){
+  .questions {
+    flex-direction: column-reverse;
+  }
+
+  .questions_image {
+    width: 100%;
+    margin-bottom: 62px;
+  }
+
+  .questions_image img {
+    width: 100%;
+  }
+  
+  .questions_list {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width : 650px){
+  .all_steps .group_list li {
+    font-size: 14px;
+    margin-bottom: 5px !important;
+  }
+
+  .all_steps .custom_paragraph > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .all_steps .custom_paragraph > h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 20px;
+  }
+
+  .questions_list .group_list li {
+    font-size: 14px;
+  }
+
+  .questions_list > label > div {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .questions_list > label > h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .questions_list > label {
+    padding: 18px 16px;
+  }
+
+  .line_step {
+    padding-right: 10px;
+  }
+
+  .alert_warning {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .questions_image {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width : 405px){
+  .all_steps .custom_paragraph {
+    min-height: 205px;
+  }
+
+  .line {
+    height: 157px;
+  }
+
+}

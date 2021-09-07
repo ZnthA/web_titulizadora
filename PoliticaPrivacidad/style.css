@@ -1,0 +1,158 @@
+.grid_info_add {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  border: 1px solid #E5E2E2;
+  border-radius: 8px;
+}
+
+.grid_info_add > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.grid_info_add > div > div {
+  padding-left: 24px;
+  padding-top: 16px;
+  width: 50%;
+  padding-bottom: 16px;
+  font-family: Barlow;
+}
+
+.grid_info_add h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.grid_info_add a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.11px;
+  text-decoration-line: underline;
+  color: #003057;
+}
+
+.grid_info_add p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.11px;
+  color: #53565A;
+}
+
+.grid_info_add > div:nth-child(odd) {
+  background-color: #EEF1F3;
+}
+
+.grid_info_add > div:nth-child(even) {
+  background-color: white;
+}
+
+.grid_info_add > div > div:nth-child(2) {
+  border-left: 1px solid #BECAD3;
+}
+
+.grid_info_add > div:nth-child(1) {
+  background: #4C5662;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.table_info_add {
+  display: none;
+}
+
+.custom_paragraph span {
+  font-family: Barlow_Medium;
+}
+
+@media screen and (max-width : 1200px){
+  .grid_info_add h2 {
+    font-size: 20px;
+  }
+  .grid_info_add p {
+    font-size: 16px;
+  }
+  .grid_info_add a {
+    font-size: 16px;
+  }
+  .grid_info_add span {
+    display: block;
+  }
+
+  .grid_info_add > div > div {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width : 750px){
+  .grid_info_add {
+    display: none;
+  }
+  .table_info_add {
+    display: block;
+    padding: 16px;
+    border: 1px solid #E5E2E2;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .table_info_add > div {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #F2EFEF;
+  }
+
+  .table_info_add > div:last-child {
+    border-bottom: none;
+  }
+
+  .table_info_add > div > span {
+    display: block;
+    padding-bottom: 24px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.11px;
+    color: #53565A;
+  }
+
+  .table_info_add p:first-child {
+    padding-top: 0px;
+  }
+
+  .table_info_add p {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.17px;
+    color: #252323;
+    /* padding-top: 24px; */
+  }
+
+  .table_info_add a {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.11px;
+    text-decoration-line: underline;
+    color: #003057;
+  }
+}
+
+@media screen and (max-width : 520px){
+  .table_info_add a > span {
+    display: block;
+  }
+}

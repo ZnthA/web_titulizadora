@@ -1,0 +1,152 @@
+.body {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.body_list {
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 500px) {
+  .body {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .body_list {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .body {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .body {
+    width: 888px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    width: 1192px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .body {
+    max-width: 1192px;
+  }
+  .body.body--Xs {
+    max-width: 768px;
+  }
+  .body.body--Sm {
+    max-width: 900px;
+  }
+  .body.body--Lg {
+    max-width: 1160px;
+    width: 100%;
+  }
+}
+/* 
+@media screen and (min-width: 1600px) {
+  .body {
+    max-width: 1280px;
+  }
+  .body.body--Xs {
+    max-width: 900px;
+  }
+  .body.body--Sm {
+    max-width: 1024px;
+  }
+  .body.body--Lg {
+    max-width: 1350px;
+  }
+} */
+/* 
+@media screen and (min-width: 1920px) {
+  .body {
+    max-width: 1400px;
+  }
+  .body.body--Xs {
+    max-width: 1024px;
+  }
+  .body.body--Sm {
+    max-width: 1280px;
+  }
+  .body.body--Lg {
+    max-width: 1500px;
+  }
+} */
+
+
+/* .body {
+  max-width: 296px;
+  margin: 0 auto;
+}
+.body_list {
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+@media screen and (min-width : 400px){
+  .body {
+    max-width: 296px;
+  }
+  .body_list {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width : 500px){
+  .body {
+    max-width: 470px;
+  }
+}
+
+@media screen and (min-width : 620px){
+  .body {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width :680px){
+  .body {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width : 800px){
+  .body {
+    max-width: 740px;
+  }
+}
+
+@media screen and (min-width : 900px){
+  .body {
+    max-width: 858px;
+  }
+}
+
+@media screen and (min-width : 1100px){
+  .body {
+    margin: 0 auto;
+    max-width: 1038px;
+  }
+} */

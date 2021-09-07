@@ -1,0 +1,87 @@
+.sub_title {
+  font-family: Barlow_Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 24px;
+  color: #252323;
+}
+
+.can_reports {
+  display: flex;
+  justify-content: space-between;
+}
+
+.can_reports .report{
+  display: flex;
+  background-color: #4C5662;
+  width: 48%;
+  min-height: 96px;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.info_report {
+  color: white;
+  padding-left: 35px;
+  line-height: 22px;
+  font-family: Barlow;
+}
+
+.info_report a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.remember {
+  padding: 64px;
+  color: white;
+  background-color: #4C5662;
+  font-family: Barlow;
+}
+
+.remember .sub_title {
+  color: white;
+}
+
+.remember p {
+  font-size: 18px;
+  letter-spacing: 0.11px;
+}
+
+@media screen and (max-width : 768px){
+  .sub_title {
+    font-size: 24px;
+  }
+  .remember p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 650px){
+  .sub_title {
+    font-size: 20px;
+  }
+  .can_reports {
+    display: block;
+  }
+  .can_reports .report{
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .can_reports .report img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .can_reports .report > div:first-child{
+    display: flex;
+    align-items: center;
+  }
+
+  .info_report {
+    padding-left: 24px;
+  }
+}

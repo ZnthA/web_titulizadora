@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../menu.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../layout.css">
+  <link rel="stylesheet" href="../footer.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="section_header children">
+      <header class="container_header body">
+      <a href="../Home/home.html">
+        <img src="../images/logo.png" alt="logo">
+      </a>
+      <div class="header">
+        <a href="../Productos/productos.html" class="e-text-white font-barlow">Productos</a>
+        <a href="../Contacto/contacto.html" class="e-text-white font-barlow contact_radius">
+          Contáctanos
+        </a>
+      </div>
+      <div class="hamburger">
+        <input type="checkbox" name="" id="check-nav">
+        <label for="check-nav">
+          <div class="row one"></div>
+          <div class="row two"></div>
+          <div class="row three"></div>
+        </label>
+        <div class="nav-mobile">
+          <div  class="nav-mobile_item">
+            <img src="../images/logo.png" alt="logo">
+          </div>
+          <a href="../GobiernoCorporativo/gobiernoCorporativo.html" class="nav-mobile_item">
+            <span>Gobierno corporativo</span>
+            <img src="../images/angle-down.png" alt="">
+          </a>
+          <a href="../Directorio/index.html" class="nav-mobile_item">
+            <span>Directorio</span>
+            <img src="../images/angle-down.png" alt="">
+          </a>
+          <a href="./normativaInterna.html" class="nav-mobile_item">
+            <span>Normativa interna</span>
+            <img src="../images/angle-down.png" alt="">
+          </a>
+          <a href="../lineaEtica/lineaEtica.html" class="nav-mobile_item">
+            <span>Línea ética</span>
+            <img src="../images/angle-down.png" alt="">
+          </a>
+          <a href="../Productos/productos.html" class="nav-mobile_item flex-start">
+            <span>Productos</span>&nbsp;&nbsp;&nbsp;
+            <img src="../images/arrow-up-right.svg" alt="">
+          </a>
+          <br><br>
+          <a href="../Contacto/contacto.html" class="nav-mobile_button">
+            Contáctanos
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="content_nav" style="background: #B7B09C;">
+      <nav class="body">
+        <div class="nav_one font-barlow" >
+          TITULIZADORA SURA
+        </div>
+        <div class="nav_two children">
+          <a href="../GobiernoCorporativo/gobiernoCorporativo.html" class="e-text-white font-barlow e-text-medium">Gobierno corporativo</a>
+          <a href="../Directorio/index.html" class="e-text-white font-barlow e-text-medium">Directorio</a>
+          <a href="./normativaInterna.html" class="e-text-white font-barlow e-text-medium">Normativa interna</a>
+          <a href="../lineaEtica/lineaEtica.html" class="e-text-white font-barlow e-text-medium">Línea ética</a>
+        </div>
+      </nav>
+    </div>
+    <div class="dashboard dashboard_children">
+      <div class="body">
+        <h1>Titulizadora SURA</h1>
+      </div>
+    </div>
+  </section>
+  <div class="e-bg-gray-10">
+    <section class="body">
+      <br><br>
+      <div class="come_back">
+        <a href="../Home/home.html">Home</a>
+        <img src="../images/arrow_right.png" alt="">
+        <span>Términos y Condiciones</span>
+      </div>
+      <div class="separator">
+        <div class="terms">
+          <div class="terms_section">
+            <input type="radio" name="terms" id="terms1" checked>
+            <label onclick="showInfo('terms1')" for="terms1" style="border-radius: 8px 0px 0px 0px;">
+              <p>01</p>
+              <span>Condiciones Generales</span>
+            </label>
+            <input type="radio" name="terms" id="terms2">
+            <label onclick="showInfo('terms2')" for="terms2">
+              <p>02</p>
+              <span>Derechos de autor</span>
+            </label>
+            <input type="radio" name="terms" id="terms3">
+            <label onclick="showInfo('terms3')" for="terms3">
+              <p>03</p>
+              <span>Marcas, Patentes y Logotipo</span>
+            </label>
+            <input type="radio" name="terms" id="terms4">
+            <label onclick="showInfo('terms4')" for="terms4">
+              <p>04</p>
+              <span>No Obligación</span>
+            </label>
+            <input type="radio" name="terms" id="terms5">
+            <label onclick="showInfo('terms5')" for="terms5" style="border-radius: 0px 0px 0px 8px;">
+              <p>05</p>
+              <span>Leyes aplicables</span>
+            </label>
+          </div>
+          <div id="terms_info">
+          </div>
+        </div>
+        <div class="terms_mobile">
+          <input type="radio" name="terms_mobile" id="tm1" checked>
+          <label for="tm1">
+            <h4>Condiciones Generales <img src="../images/arrow_up.png" alt=""></h4>
+            <div id="termsDesc1"></div>
+          </label>
+          <input type="radio" name="terms_mobile" id="tm2">
+          <label for="tm2">
+            <h4>Derechos de autor <img src="../images/arrow_up.png" alt=""></h4>
+            <div id="termsDesc2"></div>
+          </label>
+          <input type="radio" name="terms_mobile" id="tm3">
+          <label for="tm3">
+            <h4>Marcas, Patentes y Logotipo <img src="../images/arrow_up.png" alt=""></h4>
+            <div id="termsDesc3"></div>
+          </label>
+          <input type="radio" name="terms_mobile" id="tm4">
+          <label for="tm4">
+            <h4>No Obligación <img src="../images/arrow_up.png" alt=""></h4>
+            <div id="termsDesc4"></div>
+          </label>
+          <input type="radio" name="terms_mobile" id="tm5">
+          <label for="tm5">
+            <h4>Leyes aplicables <img src="../images/arrow_up.png" alt=""></h4>
+            <div id="termsDesc5"></div>
+          </label>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="body">
+      <img src="../images/logo.png" alt="logo">
+      <div class="footer_options">
+        <a href="../PoliticaPrivacidad/politicaPrivacidad.html">POLÍTICA DE PRIVACIDAD</a>
+        <a href="../TerminosCondiciones/terminoCondiciones.html">TÉRMINOS Y CONDICIONES</a>
+        <a href="../libroReclamacion/libroReclamacion.html">LIBRO DE RECLAMACIONES</a>
+        <a href="../AtencionReclamos/atencionReclamos.html">RECLAMOS</a>
+      </div>
+    </div>
+    <p class="body">© Copyright SURA</p>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'linear',
+      duration: 800
+    });
+
+    function terms1 (notTitle) {
+      return `
+        <div class="custom_paragraph"  data-aois-easing="ease-in">
+          ${notTitle ? '<h3></h3>' : '<h2>Condiciones Generales</h2>'}
+          <p>
+            Las Condiciones de Registro, describen todos los términos y condiciones aplicables al 
+            uso de nuestros contenidos y servicios disponibles bajo el dominio y sub dominios de 
+            <a target="_blank" class="e-link" href="http://www.titulizadorasura.pe/">www.titulizadorasura.pe</a>. Si el usuario 
+            no está de acuerdo con estos términos y condiciones, 
+            le pedimos no usar ni acceder a nuestros servicios.
+          </p>
+          <p>
+            El propósito principal de este sitio es brindar servicios vía Internet, así como información 
+            sobre los productos y servicios que en general <span>Titulizadora SURA</span> proporciona a todos sus 
+            clientes y a quienes aún no lo son. Sin embargo, esta información no debe interpretarse como 
+            una oferta para vender o como consejo de inversión de cualquier índole. Sus inquietudes 
+            particulares deben dirigirse a través de nuestros <a class="e-link" target="_blank" href="#">Canales de Atención</a>.
+          </p>
+          <p>
+            Accediendo a este sitio y visualizando la información que contiene, reconoce que ha leído, 
+            entiende, acepta y está de acuerdo con los términos y condiciones que siguen a continuación.
+          </p>
+          <p>
+            Ninguna garantía expresa o implícita que se da acerca de la exactitud o integridad de la 
+            información mostrada en los sitios a los que se hace referencia (mediante vínculos o links) 
+            en esta página. La referencia (mediante vínculos o links) a esos sitios se ha hecho como 
+            ayuda informativa o para completar la funcionalidad de ciertos servicios y no implica que 
+            se endosen esos sitios o cualquier producto o asistencia que en ellos se describa.
+          </p>
+          <p>
+            El acceso y el uso de este sitio o de cualquiera referenciado, se dan a riesgo propio de 
+            la persona que accede a la página web, por lo que <span>Titulizadora SURA</span> no asume obligación 
+            alguna por tal conexión. El sitio se reserva el derecho, a su solo criterio, de eliminar 
+            cualquier referencia o contenido.
+          </p>
+          <p>
+            Accediendo a este sitio se compromete igualmente a cumplir las pautas establecidas en cualquier 
+            sitio al que acceda a través de una referencia o vínculo.
+          </p>
+        </div>
+      `
+    }
+    function terms2 (notTitle){
+      return `
+      <div class="custom_paragraph"  data-aois-easing="ease-in">
+        ${notTitle ? '<h3></h3>' : '<h2>Derechos de Autor</h2>'}
+        <p>
+          Este sitio está protegido por los derechos de propiedad de autor. Todos los derechos 
+          involucrados como por ejemplo el contenido y el diseño visual de las páginas son de 
+          <span>Titulizadora SURA</span>. Se prohíbe utilizar, codificar, copiar, distribuir, transmitir o 
+          comercializar los derechos involucrados sin el permiso expreso por escrito.
+        </p>
+      </div>
+    `
+    }
+    const terms3 = (notTitle) => {
+      return `
+        <div class="custom_paragraph"  data-aois-easing="ease-in">
+          ${notTitle ? '<h3></h3>' : '<h2>Marcas, Patentes y Logotipo</h2>'}
+          <p>
+            Las Marcas, Patentes y Logotipos que aparecen en este sitio son de propiedad de <span>Titulizadora SURA</span> 
+            y del <span>Grupo SURA</span> o sus unidades de negocio, a menos que se diga lo contrario. Se prohíbe el uso de 
+            cualquier marca, patente o logotipo sin el consentimiento por escrito previo pertinente.
+          </p>
+        </div>
+      `
+    }
+
+    const terms4 = (notTitle) =>`
+      <div class="custom_paragraph"  data-aois-easing="ease-in">
+        ${notTitle ? '<h3></h3>' : '<h2>No Obligación</h2>'}
+        <p>
+          <span>Titulizadora SURA</span> y el <span>Grupo SURA</span> o sus unidades de negocio, realizan esfuerzos razonables 
+          para incluir información exacta y actualizada en este sitio. Sin embargo, algunas veces pueden 
+          ocurrir errores u omisiones. En tal caso, <span>Titulizadora SURA</span> y el <span>Grupo SURA</span> o sus unidades de 
+          negocio no serán responsables de cualquier daño, perjuicio directo, indirecto, incidental, 
+          consecuente o especial como consecuencia del uso de este sitio o de los sitios referenciados.
+        </p>
+        <p>
+          Toda la información publicada en este sitio, incluyendo pero no limitado a los gráficos, 
+          textos y referencias a otros sitios, se proporciona 'como es' y está sujeto a cambio sin 
+          aviso previo. Estos antecedentes se proporcionan sin garantía de cualquier clase expresa 
+          o implícita, incluyendo pero no limitado a una garantía de negocios y similares o a estar 
+          libre de virus de computación.
+        </p>
+        <p>
+          <span>Titulizadora SURA</span> no garantiza la suficiencia, exactitud e integridad de cualquier información en este sitio o de los referenciados por lo que no se hace responsable de obligación alguna por errores u omisiones. Los visitantes son responsables de evaluar la exactitud, integridad o utilidad de cualquier información disponible o accesible desde este sitio. No se garantiza un servicio libre e ininterrumpido de este sitio pero se declara la voluntad de efectuar esfuerzos razonables para lograr su disponibilidad el mayor tiempo posible.
+        </p>
+        <p>
+          Si el Usuario tiene alguna consulta referente a las Condiciones de Registro, puede hacerla 
+          llegar a través de nuestra opción <a class="e-link" href="">Contáctanos</a>.
+        </p>
+      </div>
+    `
+
+    const terms5 = (notTitle) =>`
+      <div class="custom_paragraph"  data-aois-easing="ease-in">
+        ${notTitle ? '<h3></h3>' : '<h2>Leyes Aplicables</h2>'}
+        <p>
+          El presente documento se interpretará y regirá conforme a la legislación peruana.
+        </p>
+      </div>
+    `
+
+    function showInfo(key = 'terms1') {
+      const termsInfo = document.getElementById('terms_info')
+      if (key === 'terms1') {
+        termsInfo.innerHTML = terms1()
+      } else if (key === 'terms2') {
+        termsInfo.innerHTML = terms2()
+      } else if (key === 'terms3') {
+        termsInfo.innerHTML = terms3()
+      } else if (key === 'terms4') {
+        termsInfo.innerHTML = terms4()
+      } else if (key === 'terms5') {
+        termsInfo.innerHTML = terms5()
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      showInfo()
+      document.getElementById('termsDesc1').innerHTML = terms1(true)
+      document.getElementById('termsDesc2').innerHTML = terms2(true)
+      document.getElementById('termsDesc3').innerHTML = terms3(true)
+      document.getElementById('termsDesc4').innerHTML = terms4(true)
+      document.getElementById('termsDesc5').innerHTML = terms5(true)
+    })
+  </script>
+</body>
+</html>
